@@ -1,0 +1,49 @@
+form {
+	margin: 30px auto;
+	display: flex;
+	flex-direction: column;
+	max-width: 630px;
+}
+
+input,
+textarea,
+.submit {
+	margin-top: 4px;
+	border: 1px solid rgba(75, 49, 49, 0.2);
+	border-radius: 3px;
+	padding: 0 10px;
+	font-size: 15px;
+}
+
+input {
+	height: 40px;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-row,
+.submit {
+	margin: 5px auto;
+	width: 95%;
+}
+
+.name-area {
+	display: flex;
+	justify-content: space-between;
+}
+
+.name-input {
+	width: calc((100% - 8px) / 2);
+}
+
+#first-name {
+	margin-right: 8px;
+}
+
+.submit {
+	height: 35px;
+	background-color: rgba(80, 159, 233, 0.5);
+}
