@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/yehuda-fixes-thermostats/static/css/main.b8316683.css",
+    "main.js": "/yehuda-fixes-thermostats/static/js/main.2d2adf19.js",
+    "static/js/787.ddf4526b.chunk.js": "/yehuda-fixes-thermostats/static/js/787.ddf4526b.chunk.js",
+    "static/media/logo.png": "/yehuda-fixes-thermostats/static/media/logo.4afe39f15f6ede079858.png",
+    "index.html": "/yehuda-fixes-thermostats/index.html",
+    "main.b8316683.css.map": "/yehuda-fixes-thermostats/static/css/main.b8316683.css.map",
+    "main.2d2adf19.js.map": "/yehuda-fixes-thermostats/static/js/main.2d2adf19.js.map",
+    "787.ddf4526b.chunk.js.map": "/yehuda-fixes-thermostats/static/js/787.ddf4526b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8316683.css",
+    "static/js/main.2d2adf19.js"
+  ]
+}
