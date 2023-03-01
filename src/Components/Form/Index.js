@@ -21,7 +21,7 @@ function Form() {
     }
 
     return (
-        <form>
+        <form action="#">
             <div className="name-area form-row">
                 <div className="input-group name-input" id="first-name">
                     First Name: <input type="text" ref={firstNameRef} />
