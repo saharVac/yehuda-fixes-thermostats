@@ -1,0 +1,22 @@
+.option {
+    width: 120px;
+}
+
+.option-image {
+    height: 80px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-image img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.option-name {
+    text-align: center;
+    width: 100%;
+}

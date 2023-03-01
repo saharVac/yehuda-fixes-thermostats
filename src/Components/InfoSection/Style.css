@@ -1,0 +1,22 @@
+.info-section {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.info-chunk {
+    margin-top: 10px;
+}
+
+.warning-list {
+    color: red;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.sub-info {
+    padding-left: 5px;
+    text-align: left !important;
+}
