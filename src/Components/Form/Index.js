@@ -16,9 +16,9 @@ function Form() {
     const sendMail = () => {
         console.log("here")
         // TODO: update the API endpoint once new one created
-        // Axios.post("https://svac-shopping-list.herokuapp.com/send-contact-email", { firstName: firstNameRef.current.value, lastName: lastNameRef.current.value, email: emailRef.current.value, phoneNumber: phoneNumberRef.current.value, symptoms: symptomsRef.current.value }).then(response => {
-        //     // Clear form and indicate message was sent
-        // }).catch(err => console.log(err))
+        Axios.post("https://svac-shopping-list.herokuapp.com/send-contact-email", { firstName: firstNameRef.current.value, lastName: lastNameRef.current.value, email: emailRef.current.value, phoneNumber: phoneNumberRef.current.value, symptoms: symptomsRef.current.value }).then(response => {
+            // Clear form and indicate message was sent
+        }).catch(err => console.log(err))
     }
 
     return (
