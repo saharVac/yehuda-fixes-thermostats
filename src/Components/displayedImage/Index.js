@@ -20,7 +20,7 @@ function DisplayedImage({ device }) {
         setDisplayedPic(
             device === "iComfort Wifi - 10F81" ?
                 pic10F81 :
-                device === "iComfort/Comfort Sync - Emergency Stat" ?
+                device === "Emergency Stat - Replaces 10F81" ?
                     picEmergency :
                     picS30
         )
@@ -41,7 +41,7 @@ function DisplayedImage({ device }) {
                 {
                     device === "iComfort Wifi - 10F81" ?
                         <Pictures10F81 updateDisplayedPic={updateDisplayedPic} /> :
-                        device === "iComfort/Comfort Sync - Emergency Stat" ?
+                        device === "Emergency Stat - Replaces 10F81" ?
                             <PicturesEmergency updateDisplayedPic={updateDisplayedPic} /> :
                             <PicturesS30 updateDisplayedPic={updateDisplayedPic} />
                 }
