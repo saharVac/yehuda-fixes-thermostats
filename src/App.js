@@ -3,11 +3,11 @@ import Header from './Components/Header/Index'
 import DisplayedImage from './Components/displayedImage/Index'
 import CallForAction from './Components/CallForAction/Index'
 import Form from './Components/Form/Index'
-import Warranty from './Components/Footer/Index'
 import Options from './Components/Options/Index';
 import { useReducer, useState } from 'react';
 import InfoSection from './Components/InfoSection/Index';
 import Footer from './Components/Footer/Index';
+import Disclaimer from './Components/Disclaimer/Index';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -41,7 +41,7 @@ function App() {
 
       <CallForAction />
 
-      <Options setSelectedDevice={setSelectedDevice} />
+      <Options setSelectedDevice={setSelectedDevice} displayedDevice={state.displayedDevice} />
 
       <DisplayedImage
         device={state.displayedDevice}
@@ -50,6 +50,8 @@ function App() {
       <InfoSection
         device={state.displayedDevice}
       />
+
+      <Disclaimer />
 
       <Form />
 

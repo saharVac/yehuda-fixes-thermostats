@@ -1,23 +1,28 @@
 const content = {
     "iComfort Wifi - 10F81": {
         title: "$30 CORE REFUND Lennox iComfort WIFI Thermostat 10F81 Refurbished + Warranty",
+        price: {
+            "Display": "529.99"
+        },
         get: [
             "A refurbished Lennox 10F81 iComfort WI-FI thermostat that has been completely repaired and tested by a technician with 20+ years of electronics repair experience.",
             "Improved circuit design to prevent screen from failing in the future due to manufacturer defects.",
             "Expert, personal support via phone or even facetime if you need help setting anything up!"
         ],
         warranty: [
-            "You have a 30 day window to return this thermostat if it arrives damaged in the mail due to shipping. You will receive a full refund.",
-            "You get a 1 year warranty on all repairs made!"
+            "You get a 2 year warranty on all repairs made!"
         ],
         refund: [
-            "The sale price of every thermostat includes a $30 core charge. A prepaid return label will be shipped with each thermostat and your refund will be issued to your eBay order upon receipt of your broken unit."
+            "The sale price of every thermostat includes a $30 core charge. A prepaid return label will be shipped with each thermostat and your refund will be issued to your order upon receipt of your broken unit."
         ]
     },
     "Emergency Stat - Replaces 10F81": {
         title: "Emergency Thermostat - Replaces Lennox 10F81-BRAND NEW - PLUG&PLAY + $30 REFUND!",
+        price: {
+            "Display": "299.99"
+        },
         get: [
-            "OVERNIGHT SHIPPING available for emergencies - make sure to select the correct shipping option before placing the order and mention in contact email details.",
+            "OVERNIGHT SHIPPING available for emergencies",
             "This thermostat does everything the 10F81 does except for the following:",
             [
                 "1. IT DOES NOT HOOK UP TO WI-FI.",
@@ -29,37 +34,31 @@ const content = {
         ],
         refund: [
             "Receive a $30 refund when you use the prepaid return label to mail back your broken thermostat.",
-            "I will refund you straight to your eBay order upon receipt of the package.",
-            "Returns not accepted unless damaged in shipping."
+            "I will refund your order upon receipt of the package.",
         ]
     },
     "Lennox S30 Display and Hub": {
         title: "Lennox iComfort S30 Ultra DEALER REPLACMENT DISPLAYS AND HUBS - Replaces 10F81",
+        price: {
+            "Display": "299.99",
+            "Hub": "264.99",
+            "Bundle Both": "499.99"
+        },
         get: [
-            "Lennox iComfort S30 Ultra 19V30 which has been rebranded for Lennox's sister company Allied Air:",
+            "Please Read Carefully Before Ordering:",
             [
-                "The Comfort Sync A3 Ultra is the exact same thermostat and hub other than the logo",
-                "Lennox owns Allied Air and Armstrong Air and they manufacture the same equipment for them and just slap a different logo on everything",
-                "You can use the Comfort Sync display with a Lennox branded hub and visa versa without issue!"
+                "Up for sale is a brand new Lennox iComfort S30 Ultra Catalog# 19V30. The Logo says Comfort sync because Lennox branded this model for their sister company Allied Air, but Allied Air has the exact same equipment as Lennox. Buy with confidence knowing that this will work with any piece of Lennox equipment you throw at it!",
+                "This thermostat Display and wall plate can be used to replace a failing Lennox S30 12X97 that has a dreaded mag mount. It will also work with your older style hub no problem! It can also be used to upgrade a Lennox iComfort 10F81, 88W58, and 49W95.",
+                "An in depth installation manual for DIYers complete with a wiring diagram and step by step instructions for a trouble free installation is shipped with each order!"
             ],
-            "The only difference other than the logo is that the Comfort Sync A3 does not have the 'HomeKit' option in the settings menu. Instead, you can either:",
-            [
-                "1. Control the thermostat by using either the Lennox, or Comfort Sync branded phone app on IOS and Android.",
-                "2. Logging in to the portal site on a desktop computer with the same login information as the phone app. "
-            ],
-            "Overnight shipping available for emergencies, make sure to select the correct shipping option before placing the order.",
-            "Everything is brand new, never used.",
-            "You can buy the Hub and Display separately if you only need one or the other for repairs!",
+            "Overnight shipping available for emergencies, just let me know in the contact section!",
             "24/7 technical support via phone call, text, or facetime, save your money! Install it yourself!",
-            "Upgrades Lennox iComfort 10F81, 88W58, and 49W95",
-            "Lastly, an in depth installation manual for DIYers complete with a wiring diagram and step by step instructions for a trouble free installation!"
+            "FREAKY FAST SHIPPING SERVICE!",
+            "SUPPORT IS ALWAYS A PHONE CALL AWAY!",
         ],
         warning: [
-            "IMPROPER INSTALLATION OF THE DISPLAY AND/OR HUB CAN RESULT IN PERMANENT DAMAGE TO THE HUB, OR DISPLAY, OR BOTH. I WILL OFFER SUPPORT EVERY STEP OF THE WAY BUT AT THE END OF THE DAY I TAKE NO LIABILITY IF YOU MAKE A MISTAKE THAT ENDS UP DAMAGING YOUR THERMOSTAT OR HUB.",
-            "IF YOU ARE NOT COMFORTABLE USING COMMON HAND TOOLS AND FOLLOWING PRECISE INSTRUCTIONS THEN PLEASE HIRE AN HVAC PROFESSIONAL.",
-            "DO NOT TRY TO INSTALL THE DISPLAY WITHOUT FIRST INSTALLING THE HUB ON YOUR AIR HANDLER OR FURNACE AND THEN CONNECTING THE DISPLAY TO THE HUB!",
-            "IF YOU DO NOT FOLLOW THIS PROCESS EXACTLY THEN YOU WILL 100% DESTROY THE DISPLAY AND I WILL NOT ACCEPT RETURNS.",
-            "PLEASE DO NOT TRY TO INSTALL THIS WITHOUT CONSULTING THE STEP BY STEP GUIDE. IT IS NOT WORTH TRYING TO FIGURE IT OUT AND THEN DESTROYING THE THERMOSTAT DISPLAY."
+            "IMPROPER INSTALLATION OF THE DISPLAY AND/OR HUB CAN RESULT IN PERMANENT DAMAGE TO THE HUB AND/OR DISPLAY",
+            "IF YOU ARE NOT COMFORTABLE USING COMMON HAND TOOLS AND FOLLOWING PRECISE INSTRUCTIONS THEN PLEASE HIRE A LENNOX HVAC PROFESSIONAL",
         ]
     }
 }

@@ -22,7 +22,10 @@ function Form() {
     }
 
     return (
-        <div>
+        <div className="form-area">
+
+            <h2 className="title">Contact for Purchase</h2>
+
             <div className="name-area form-row">
                 <div className="input-group name-input" id="first-name">
                     First Name: <input type="text" ref={firstNameRef} />
@@ -40,7 +43,7 @@ function Form() {
             <div className="input-group form-row">
                 Symptoms: <textarea ref={symptomsRef} cols="30" rows="10"></textarea>
             </div>
-            <button onClick={() => sendMail()} className="submit">Contact</button>
+            <button onClick={() => sendMail()} className="submit">Send Email</button>
         </div>
     )
 }

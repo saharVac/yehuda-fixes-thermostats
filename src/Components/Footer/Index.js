@@ -4,8 +4,8 @@ import './Style.css'
 function Footer() {
     return (
         <div className="warranty">
-            <p className="warranty-title">NJ License #:</p>
-            <p className="warranty-text">######</p>
+            <p className="warranty-title">YehudaFixes LLC LIC #</p>
+            <p className="warranty-text">13VH10857500</p>
         </div>
     )
 }

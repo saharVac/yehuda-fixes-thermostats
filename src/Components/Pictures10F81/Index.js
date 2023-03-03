@@ -9,7 +9,7 @@ function Pictures10F81({ updateDisplayedPic }) {
     return (
         <div className="pictures-10F81">
             <div className="pic-choices-row">
-                <PicChoice choosePic={() => updateDisplayedPic(pic1)} src={pic1} />
+                <PicChoice active choosePic={() => updateDisplayedPic(pic1)} src={pic1} />
                 <PicChoice choosePic={() => updateDisplayedPic(pic2)} src={pic2} />
                 <PicChoice choosePic={() => updateDisplayedPic(pic3)} src={pic3} />
                 <PicChoice choosePic={() => updateDisplayedPic(pic4)} src={pic4} />

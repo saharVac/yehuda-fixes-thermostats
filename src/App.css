@@ -1,3 +1,10 @@
 .App {
     width: 100%;
 }
+
+.active {
+    --color: rgba(114, 102, 102, 0.534);
+    /* box-sizing: content-box !important; */
+    border: 5px solid var(--color);
+    background: var(--color) !important;
+}

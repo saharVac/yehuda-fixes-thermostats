@@ -1,11 +1,24 @@
 .info-section {
     width: 100%;
     text-align: center;
-    padding: 5px;
+    padding: 10px 0 30px 0;
+    background: rgba(170, 167, 130, 0.418);
 }
 
 .info-chunk {
-    margin-top: 10px;
+    margin: 10px 0;
+}
+
+.price-chunk {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.price-group {
+    width: 180px;
+    margin: 0 10px;
 }
 
 .warning-list {

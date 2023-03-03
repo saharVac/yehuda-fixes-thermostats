@@ -1,9 +1,9 @@
 import React from 'react'
 import './Style.css'
 
-function PicChoice({ src, choosePic }) {
+function PicChoice({ src, choosePic, active }) {
     return (
-        <div className="pic-choice" onClick={choosePic}>
+        <div className={`pic-choice ${active ? "active" : ""}`} onClick={choosePic}>
             <img className="choicepic" src={src} alt="" />
         </div>
     )

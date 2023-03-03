@@ -1,0 +1,17 @@
+.disclaimer-section {
+    text-align: center;
+    background: rgba(146, 110, 55, 0.699);
+    padding: 30px 0;
+}
+
+.disclaimer-chunk {
+    margin: 7px 0;
+}
+
+.disclaimer-chunk-main {
+    text-decoration: underline;
+}
+
+.disclaimer-chunk-sub {
+    margin-top: 4px;
+}

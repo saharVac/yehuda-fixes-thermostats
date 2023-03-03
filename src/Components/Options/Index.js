@@ -7,28 +7,47 @@ import picS30 from '../PicturesS30/pic1.jpeg'
 
 // TODO: Add effect to chosen device
 
-function Options({ setSelectedDevice }) {
+function Options({ setSelectedDevice, displayedDevice }) {
     return (
         <div className="options">
 
             <div className="instructions">Choose your device:</div>
 
             <div className="options-container">
-                <Option
-                    name="iComfort Wifi - 10F81"
-                    updateSelectedDevice={setSelectedDevice}
-                    pic={pic10F81}
-                />
-                <Option
-                    name="Emergency Stat - Replaces 10F81"
-                    updateSelectedDevice={setSelectedDevice}
-                    pic={picEmergency}
-                />
-                <Option
-                    name="Lennox S30 Display and Hub"
-                    updateSelectedDevice={setSelectedDevice}
-                    pic={picS30}
-                />
+
+                <div className="options-pics-row">
+                    <Option
+                        name="iComfort Wifi - 10F81"
+                        updateSelectedDevice={setSelectedDevice}
+                        pic={pic10F81}
+                        active={displayedDevice == "iComfort Wifi - 10F81"}
+                    />
+                    <Option
+                        name="Emergency Stat - Replaces 10F81"
+                        updateSelectedDevice={setSelectedDevice}
+                        pic={picEmergency}
+                        active={displayedDevice == "Emergency Stat - Replaces 10F81"}
+                    />
+                    <Option
+                        name="Lennox S30 Display and Hub"
+                        updateSelectedDevice={setSelectedDevice}
+                        pic={picS30}
+                        active={displayedDevice == "Lennox S30 Display and Hub"}
+                    />
+                </div>
+
+                <div className="device-labels">
+                    <div className="device-label">
+                        iComfort Wifi- 10F81
+                    </div>
+                    <div className="device-label">
+                        Emergency Stat- Replaces 10F81
+                    </div>
+                    <div className="device-label">
+                        Lennox S30 Display and Hub
+                    </div>
+                </div>
+
             </div>
 
         </div>

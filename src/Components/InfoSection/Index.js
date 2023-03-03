@@ -7,8 +7,38 @@ function InfoSection({ device }) {
     return (
         <div className="info-section">
 
+            <h2 className="info-chunk">Price</h2>
+            <div className="price-chunk">
+
+                <div className="price-group">
+                    <div className="price-type">Display</div>
+                    <div className="price">{content[device].price["Display"]}</div>
+                </div>
+
+                {
+                    content[device].price["Hub"] ?
+                        <>
+                            <div className="price-group">
+                                <div className="price-type">Hub</div>
+                                <div className="price">{content[device].price["Hub"]}</div>
+                            </div>
+                        </> :
+                        ""
+                }
+                {
+                    content[device].price["Bundle Both"] ?
+                        <>
+                            <div className="price-group">
+                                <div className="price-type">Bundle Both</div>
+                                <div className="price">{content[device].price["Bundle Both"]}</div>
+                            </div>
+                        </> :
+                        ""
+                }
+            </div>
+
             <h2 className="info-chunk">What You Get</h2>
-            <ol type="1" className="what-you-get-list">
+            <ul type="1" className="what-you-get-list">
                 {
                     content[device].get.map(youGet => {
                         if (typeof youGet == "object") {
@@ -21,7 +51,7 @@ function InfoSection({ device }) {
                         return <li key={youGet}>{youGet}</li>
                     })
                 }
-            </ol>
+            </ul>
 
             {
                 content[device].refund ?

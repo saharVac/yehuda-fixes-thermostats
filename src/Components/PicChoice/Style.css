@@ -1,11 +1,13 @@
 .pic-choice {
+	width: 20%;
+	height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgba(74, 74, 77, 0.1);
 }
 
 .choicepic {
-    /* width: 100%; */
     height: 100%;
     object-fit: cover;
 }
