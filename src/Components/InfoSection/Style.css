@@ -5,6 +5,10 @@
     background: rgba(170, 167, 130, 0.418);
 }
 
+.you-get-chunk {
+    margin-bottom: 20px;
+}
+
 .info-chunk {
     margin: 10px 0;
 }
@@ -32,4 +36,8 @@ li {
 .sub-info {
     padding-left: 5px;
     text-align: left !important;
+}
+
+.warning-list {
+
 }
