@@ -83,8 +83,11 @@ function InfoSection({ device }) {
             {
                 content[device].warranty ?
                     <>
-                        <h2 className="info-chunk">Warranty</h2>
-                        <p className="item">{content[device].warranty}</p>
+                        <div className="warranty-section">
+                            <h2 className="info-chunk">Warranty</h2>
+                            <p className="item">{content[device].warranty}</p>
+                        </div>
+
                     </> :
                     ""
             }

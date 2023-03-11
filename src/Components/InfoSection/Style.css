@@ -1,7 +1,7 @@
 .info-section {
     width: 100%;
     text-align: center;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     list-style: none;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .refund-section {
-    padding: 10px 15px 30px 30px;
+    padding: 10px 15px 30px 15px;
     background: #FDDE7C;
 }
 
@@ -59,6 +59,10 @@
 
 .warning-list {
     color: red;
+}
+
+.warranty-section {
+    padding-bottom: 30px;
 }
 
 li {

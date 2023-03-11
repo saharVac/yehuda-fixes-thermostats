@@ -4,7 +4,7 @@
 }
 
 .active {
-    --color: #fccb07a2;
+    --color: #f1d10296;
     /* box-sizing: content-box !important; */
     background: var(--color) !important;
     padding: 10px;
