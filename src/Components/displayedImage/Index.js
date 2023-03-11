@@ -8,16 +8,16 @@ import pic10F81 from '../Pictures10F81/pic1.jpeg'
 import picEmergency from '../PicturesEmergency/pic1.jpeg'
 import picS30 from '../PicturesS30/pic1.jpeg'
 
-function DisplayedImage({ device }) {
+function DisplayedImage({ device, setSelectedPic, displayedPic }) {
 
-    const [displayedPic, setDisplayedPic] = useState(pic10F81)
+    const [picShown, setPicShown] = useState(pic10F81)
 
     const updateDisplayedPic = (pic) => {
-        setDisplayedPic(pic)
+        setSelectedPic(pic)
     }
 
     useEffect(() => {
-        setDisplayedPic(
+        setPicShown(
             device === "iComfort Wifi - 10F81" ?
                 pic10F81 :
                 device === "Emergency Stat - Replaces 10F81" ?
@@ -26,11 +26,22 @@ function DisplayedImage({ device }) {
         )
     }, [device])
 
+    // useEffect(() => {
+    //     setPicShown(
+    //         device === "iComfort Wifi - 10F81" ?
+    //             pic10F81 :
+    //             device === "Emergency Stat - Replaces 10F81" ?
+    //                 picEmergency :
+    //                 picS30
+    //     )
+    // }, [picShown])
+
     return (
         <div className="picture-area">
 
-            <img className="chosen-picture"
-                src={displayedPic}
+            <img
+                className="chosen-picture"
+                src={picShown}
                 alt="main-picture"
             />
 
@@ -40,10 +51,25 @@ function DisplayedImage({ device }) {
 
                 {
                     device === "iComfort Wifi - 10F81" ?
-                        <Pictures10F81 updateDisplayedPic={updateDisplayedPic} /> :
+                        <Pictures10F81
+                            updateDisplayedPic={updateDisplayedPic}
+                            setSelectedPic={setSelectedPic}
+                            setPicShown={setPicShown}
+                            displayedPic={displayedPic}
+                        /> :
                         device === "Emergency Stat - Replaces 10F81" ?
-                            <PicturesEmergency updateDisplayedPic={updateDisplayedPic} /> :
-                            <PicturesS30 updateDisplayedPic={updateDisplayedPic} />
+                            <PicturesEmergency
+                                updateDisplayedPic={updateDisplayedPic}
+                                setSelectedPic={setSelectedPic}
+                                setPicShown={setPicShown}
+                                displayedPic={displayedPic}
+                            /> :
+                            <PicturesS30
+                                updateDisplayedPic={updateDisplayedPic}
+                                setSelectedPic={setSelectedPic}
+                                setPicShown={setPicShown}
+                                displayedPic={displayedPic}
+                            />
                 }
 
             </div>

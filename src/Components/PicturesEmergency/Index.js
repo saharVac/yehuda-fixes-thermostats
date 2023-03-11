@@ -11,24 +11,28 @@ import pic8 from './pic8.jpeg'
 import pic9 from './pic9.jpeg'
 import pic10 from './pic10.jpeg'
 
-function PicturesEmergency({ updateDisplayedPic }) {
+const picRow1 = [pic1, pic2, pic3, pic4]
+const picRow2 = [pic5, pic6, pic7, pic8]
+const picRow3 = [pic9, pic10]
+
+
+function PicturesEmergency({ setSelectedPic, setPicShown, displayedPic }) {
     return (
         <div className="pictures-emergency">
             <div className="pic-choices-row">
-                <PicChoice choosePic={() => updateDisplayedPic(pic1)} src={pic1} />
-                <PicChoice choosePic={() => updateDisplayedPic(pic2)} src={pic2} />
-                <PicChoice choosePic={() => updateDisplayedPic(pic3)} src={pic3} />
-                <PicChoice choosePic={() => updateDisplayedPic(pic4)} src={pic4} />
+                {
+                    picRow1.map((pic, index) => <PicChoice displayedPic={displayedPic} setSelectedPic={setSelectedPic} choosePic={() => setPicShown(pic)} src={pic} key={index} picNum={index + 1} />)
+                }
             </div>
             <div className="pic-choices-row">
-                <PicChoice choosePic={() => updateDisplayedPic(pic5)} src={pic5} />
-                <PicChoice choosePic={() => updateDisplayedPic(pic6)} src={pic6} />
-                <PicChoice choosePic={() => updateDisplayedPic(pic7)} src={pic7} />
-                <PicChoice choosePic={() => updateDisplayedPic(pic8)} src={pic8} />
+                {
+                    picRow2.map((pic, index) => <PicChoice displayedPic={displayedPic} setSelectedPic={setSelectedPic} choosePic={() => setPicShown(pic)} src={pic} key={index} picNum={index + 5} />)
+                }
             </div>
             <div className="pic-choices-row">
-                <PicChoice choosePic={() => updateDisplayedPic(pic9)} src={pic9} />
-                <PicChoice choosePic={() => updateDisplayedPic(pic10)} src={pic10} />
+                {
+                    picRow3.map((pic, index) => <PicChoice displayedPic={displayedPic} setSelectedPic={setSelectedPic} choosePic={() => setPicShown(pic)} src={pic} key={index} picNum={index + 9} />)
+                }
             </div>
         </div>
     )

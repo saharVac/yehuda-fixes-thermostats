@@ -1,8 +1,9 @@
 .info-section {
     width: 100%;
     text-align: center;
-    padding: 10px 0 30px 0;
+    padding: 10px 15px 30px 15px;
     background: rgba(170, 167, 130, 0.418);
+    list-style: none;
 }
 
 .you-get-chunk {
@@ -10,7 +11,7 @@
 }
 
 .info-chunk {
-    margin: 10px 0;
+    margin: 30px 0 10px 0;
 }
 
 .price-chunk {
@@ -36,8 +37,9 @@ li {
 .sub-info {
     padding-left: 5px;
     text-align: left !important;
+    margin-bottom: 10px;
 }
 
-.warning-list {
-
+.item {
+    margin-bottom: 10px;
 }

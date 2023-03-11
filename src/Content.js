@@ -2,7 +2,7 @@ const content = {
     "iComfort Wifi - 10F81": {
         title: "$30 CORE REFUND Lennox iComfort WIFI Thermostat 10F81 Refurbished + Warranty",
         price: {
-            "Display": "529.99"
+            "Display": "549.99"
         },
         get: [
             "A refurbished Lennox 10F81 iComfort WI-FI thermostat that has been completely repaired and tested by a technician with 20+ years of electronics repair experience.",
@@ -19,7 +19,7 @@ const content = {
     "Emergency Stat - Replaces 10F81": {
         title: "Emergency Thermostat - Replaces Lennox 10F81-BRAND NEW - PLUG&PLAY + $30 REFUND!",
         price: {
-            "Display": "299.99"
+            "Display": "349.99"
         },
         get: [
             "OVERNIGHT SHIPPING available for emergencies",
@@ -40,7 +40,7 @@ const content = {
     "Lennox S30 Display and Hub": {
         title: "Lennox iComfort S30 Ultra DEALER REPLACMENT DISPLAYS AND HUBS - Replaces 10F81",
         price: {
-            "Display": "299.99",
+            "Display": "264.99",
             "Hub": "264.99",
             "Bundle Both": "499.99"
         },

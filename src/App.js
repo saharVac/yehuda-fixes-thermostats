@@ -4,10 +4,11 @@ import DisplayedImage from './Components/displayedImage/Index'
 import CallForAction from './Components/CallForAction/Index'
 import Form from './Components/Form/Index'
 import Options from './Components/Options/Index';
-import { useReducer, useState } from 'react';
+import { useReducer } from 'react';
 import InfoSection from './Components/InfoSection/Index';
 import Footer from './Components/Footer/Index';
 import Disclaimer from './Components/Disclaimer/Index';
+import Support from './Components/Support/Index';
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -15,6 +16,11 @@ const reducer = (state, action) => {
       return {
         ...state,
         displayedDevice: action.payload,
+      }
+    case 'updateSelectedPic':
+      return {
+        ...state,
+        displayedPic: action.payload,
       }
     default:
       throw new Error()
@@ -27,11 +33,17 @@ const reducer = (state, action) => {
 function App() {
 
   const [state, dispatch] = useReducer(reducer, {
-    displayedDevice: "iComfort Wifi - 10F81"
+    displayedDevice: "iComfort Wifi - 10F81",
+    displayedPic: 1
   })
 
   const setSelectedDevice = (device) => {
     dispatch({ type: 'updateSelectedDevice', payload: device })
+    dispatch({ type: 'updateSelectedPic', payload: 1 })
+  }
+
+  const setSelectedPic = (pic) => {
+    dispatch({ type: 'updateSelectedPic', payload: pic })
   }
 
   return (
@@ -41,10 +53,15 @@ function App() {
 
       <CallForAction />
 
-      <Options setSelectedDevice={setSelectedDevice} displayedDevice={state.displayedDevice} />
+      <Options
+        setSelectedDevice={setSelectedDevice}
+        displayedDevice={state.displayedDevice}
+      />
 
       <DisplayedImage
         device={state.displayedDevice}
+        setSelectedPic={setSelectedPic}
+        displayedPic={state.displayedPic}
       />
 
       <InfoSection
@@ -54,6 +71,8 @@ function App() {
       <Disclaimer />
 
       <Form />
+
+      <Support />
 
       <Footer />
 

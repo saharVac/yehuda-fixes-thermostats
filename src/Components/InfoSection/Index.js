@@ -11,7 +11,11 @@ function InfoSection({ device }) {
             <div className="price-chunk">
 
                 <div className="price-group">
-                    <div className="price-type">Display</div>
+                    {
+                        device === "Lennox S30 Display and Hub" ?
+                            <div className="price-type">Display</div> :
+                            ""
+                    }
                     <div className="price">{content[device].price["Display"]}</div>
                 </div>
 
@@ -38,30 +42,30 @@ function InfoSection({ device }) {
             </div>
 
             <h2 className="info-chunk">What You Get</h2>
-            <ul type="1" className="what-you-get-list">
+            <div type="1" className="what-you-get-list">
                 {
                     content[device].get.map(youGet => {
                         if (typeof youGet == "object") {
-                            return <ul key={youGet}>
+                            return <div className="sub-info" key={youGet}>
                                 {
-                                    youGet.map(sub => <li key={sub} className="sub-info">{sub}</li>)
+                                    youGet.map(sub => <li className="item" key={sub}>{sub}</li>)
                                 }
-                            </ul>
+                            </div>
                         }
                         return <li key={youGet}>{youGet}</li>
                     })
                 }
-            </ul>
+            </div>
 
             {
                 content[device].refund ?
                     <>
                         <h2 className="info-chunk">Core Refund</h2>
-                        <ul>
+                        <div>
                             {
-                                content[device].refund.map(piece => <li key={piece}>{piece}</li>)
+                                content[device].refund.map(piece => <li className="item" key={piece}>{piece}</li>)
                             }
-                        </ul>
+                        </div>
                     </> :
                     ""
             }
@@ -71,7 +75,7 @@ function InfoSection({ device }) {
                 content[device].warranty ?
                     <>
                         <h2 className="info-chunk">Warranty</h2>
-                        <p>{content[device].warranty}</p>
+                        <p className="item">{content[device].warranty}</p>
                     </> :
                     ""
             }
@@ -80,11 +84,11 @@ function InfoSection({ device }) {
                 content[device].warning ?
                     <>
                         <h2 className="info-chunk warning">Warning</h2>
-                        <ul className="warning-list">
+                        <div className="warning-list">
                             {
-                                content[device].warning.map(item => <li key={item}>{item}</li>)
+                                content[device].warning.map(item => <li className="item" key={item}>{item}</li>)
                             }
-                        </ul>
+                        </div>
                     </> :
                     ""
             }

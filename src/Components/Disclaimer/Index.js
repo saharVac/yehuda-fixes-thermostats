@@ -10,17 +10,23 @@ function Disclaimer() {
             <div className="disclaimer-chunk">
 
                 <div className="disclaimer-chunk-main">
-                    Invoices and Payments
+                    Invoices
+                </div>
+                <div className="disclaimer-chunk-sub">
+                    We will call you once you reach out via the contact section and determine precisely what products and support you require.
+                </div>
+                <div className="disclaimer-chunk-sub">
+                    A personal invoice will be put together and emailed to you for payment.
+                </div>
+                <div className="disclaimer-chunk-sub">
+                    After payment has been received a receipt will be emailed for your records.
                 </div>
 
-                <div className="disclaimer-chunk-sub">
-                    All  are done off site.
+                <div className="disclaimer-chunk-main">
+                    Payments
                 </div>
                 <div className="disclaimer-chunk-sub">
-                    Must be made through Zelle, PayPal, or Venmo
-                </div>
-                <div className="disclaimer-chunk-sub">
-                    Receipts will be sent through email
+                    All payments must be made through  Zelle, or Venmo.
                 </div>
 
             </div>
@@ -32,11 +38,16 @@ function Disclaimer() {
                 </div>
 
                 <div className="disclaimer-chunk-sub">
-                    UPS Ground shipping is free
+                    Please state exactly what shipping service you require when filling out the contact form.
                 </div>
-                <div className="disclaimer-chunk-sub">
-                    Overnight shipping is available but extra.
-                </div>
+                <ul className="disclaimer-chunk-sub-list">
+                    <li className="disclaimer-chunk-listed">
+                        UPS Ground shipping is free
+                    </li>
+                    <li className="disclaimer-chunk-listed">
+                        UPS Overnight shipping is available but cost will be calculated based on your location
+                    </li>
+                </ul>
 
             </div>
 
