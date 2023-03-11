@@ -1,6 +1,7 @@
 .disclaimer-section {
     text-align: center;
     padding: 30px 15px;
+    background: #FCA307;
 }
 
 .disclaimer-chunk {
@@ -9,10 +10,13 @@
 
 .disclaimer-chunk-main {
     text-decoration: underline;
+    font-size: 20px;
+    margin-top: 15px;
 }
 
 .disclaimer-chunk-sub {
-    margin-top: 4px;
+    margin-top: 10px;
+    font-size: 18px;
 }
 
 .disclaimer-chunk-sub-list {
