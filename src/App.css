@@ -3,8 +3,8 @@
 }
 
 .active {
-    --color: rgba(114, 102, 102, 0.534);
+    --color: #fccb07a2;
     /* box-sizing: content-box !important; */
-    border: 5px solid var(--color);
     background: var(--color) !important;
+    padding: 10px;
 }

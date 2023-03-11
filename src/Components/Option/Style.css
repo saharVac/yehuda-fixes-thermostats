@@ -1,16 +1,12 @@
-.option {
-    width: 110px;
-}
-
 .option-image {
     height: 80px;
-    width: 100%;
+    width: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.option-image.active {
+.option-image .active {
     padding: 2px;
 }
 

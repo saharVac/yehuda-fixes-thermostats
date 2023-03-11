@@ -49,6 +49,8 @@ function DisplayedImage({ device, setSelectedPic, displayedPic }) {
 
             <div className="picture-choices">
 
+                <div className="choice-instructions">Choose picture to view:</div>
+
                 {
                     device === "iComfort Wifi - 10F81" ?
                         <Pictures10F81

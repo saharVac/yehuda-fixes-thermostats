@@ -1,9 +1,17 @@
 .info-section {
     width: 100%;
     text-align: center;
-    padding: 10px 15px 30px 15px;
-    background: rgba(170, 167, 130, 0.418);
+    
     list-style: none;
+}
+
+.price-section {
+    padding: 10px 15px 30px 15px;
+    background: #fccb07a2;
+}
+
+.what-you-get-list {
+    padding: 10px 15px 30px 15px;
 }
 
 .you-get-chunk {
@@ -19,11 +27,34 @@
     display: flex;
     justify-content: center;
     padding: 0 20px;
+    font-size: 19px;
 }
 
 .price-group {
     width: 180px;
     margin: 0 10px;
+    height: fit-content;
+}
+
+.price-type {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    margin-top: 10px;
+}
+
+.refund-section {
+    padding: 10px 15px 30px 30px;
+    background: #FDDE7C;
+}
+
+.warning-section {
+    padding: 10px 15px 30px 15px;
+    background: #FDDE7C;
 }
 
 .warning-list {

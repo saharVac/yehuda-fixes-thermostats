@@ -1,6 +1,5 @@
 .disclaimer-section {
     text-align: center;
-    background: rgba(146, 110, 55, 0.699);
     padding: 30px 15px;
 }
 
@@ -17,7 +16,10 @@
 }
 
 .disclaimer-chunk-sub-list {
-    list-style-position: inside;
+    width: fit-content;
+    display: inline-block;
+    margin: 5px auto;
+    padding-left: 15px;
     text-align: left;
-    padding-left: 20px;
+    list-style-position: inside;
 }

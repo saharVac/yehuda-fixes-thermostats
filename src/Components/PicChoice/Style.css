@@ -1,5 +1,6 @@
 .pic-choice {
-	width: 20%;
+    width: 20% !important;
+    max-width: 120px;
 	height: 50px;
     display: flex;
     justify-content: center;
@@ -7,7 +8,22 @@
     background: rgba(74, 74, 77, 0.1);
 }
 
+.pic-choice-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .choicepic {
+    box-sizing: content-box;
+    width: 100%;
     height: 100%;
-    object-fit: cover;
+    max-height: 50px;
+    object-fit: contain !important;
+}
+
+.diffBgd {
+    --color: #fccb07a2;
+    background: var(--color) !important;
 }
